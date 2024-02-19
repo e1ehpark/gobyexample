@@ -10,7 +10,7 @@ const s string = "constant"
 func main() {
 	fmt.Println(s)
 
-	const n = 50000000
+	const n = 500000000
 
 	const d = 3e20 / n
 
