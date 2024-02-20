@@ -41,8 +41,8 @@ func main() {
 		default:
 			fmt.Printf("Don't know type %T\n", t)
 		}
-		whatAmI(true)
-		whatAmI(1)
-		whatAmI("hey")
 	}
+	whatAmI(true)
+	whatAmI(1)
+	whatAmI("hey")
 }
