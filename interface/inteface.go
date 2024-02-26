@@ -5,13 +5,12 @@ import (
 	"math"
 )
 
-
 type geometry interface {
 	area() float64
 	perim() float64
 }
 
-type rect stuct {
+type rect struct {
 	width, height float64
 }
 
@@ -49,11 +48,3 @@ func main() {
 	measure(r)
 	measure(c)
 }
-
-
-
-
-
-
-
-
