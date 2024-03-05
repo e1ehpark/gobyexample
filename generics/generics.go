@@ -21,9 +21,9 @@ type element[T any] struct {
 	val T
 }
 
-func (l *List[T]) Push(val T) {
+func (lst *List[T]) Push(val T) {
 	if lst.tail == nil {
-		lst.tail = &element[T]{val: V}
+		lst.head = &element[T]{val: V}
 		lst.tail = lst.head
 	} else {
 		lst.tail.next = &element[T]{val: V}
