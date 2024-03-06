@@ -21,7 +21,7 @@ type element[T any] struct {
 	val T
 }
 
-func (lst *List[T]) Push(val T) {
+func (lst *List[T]) Push(v T) {
 	if lst.tail == nil {
 		lst.head = &element[T]{val: V}
 		lst.tail = lst.head
@@ -31,7 +31,7 @@ func (lst *List[T]) Push(val T) {
 	}
 }
 
-func (lst *List[T]) ForEach(f func(T)) {
+func (lst *List[T]) GetAll() []T {
 	var elems []T
 	for e := lst.head; e != nil; e = e.next {
 		elems = append(elems, e.val)
