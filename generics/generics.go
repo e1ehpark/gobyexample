@@ -45,7 +45,7 @@ func main() {
 	fmt.Println("keys:", MapKeys(m))
     
 
-	_= Mapkeys[int, string](m)
+	_= MapKeys[int, string](m)
 
 	lst := List[int]{}
 	lst.Push(10)
