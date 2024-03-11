@@ -8,7 +8,9 @@ func main() {
 
 	messages <- "buffered"
 	messages <- "channel"
+	messages <- "3"
 
+	fmt.Println(<-messages)
 	fmt.Println(<-messages)
 	fmt.Println(<-messages)
 }
