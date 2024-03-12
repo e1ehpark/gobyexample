@@ -1,4 +1,4 @@
-packgage main
+packgae main
 
 import (
 	"fmt"
