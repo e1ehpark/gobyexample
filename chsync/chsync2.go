@@ -10,7 +10,7 @@ func produce(numbers chan int) {
 }
 
 func main() {
-	number := make(chan int)
+	numbers := make(chan int)
 
 	go produce(numbers)
 
