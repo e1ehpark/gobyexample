@@ -8,7 +8,7 @@ func main() {
 	signals := make(chan bool)
 
 	select {
-	case msg := <-messges:
+	case msg := <-messages:
 		fmt.Println("received message", msg)
 	default:
 		fmt.Println("no message received")
