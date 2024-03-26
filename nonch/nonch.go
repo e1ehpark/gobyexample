@@ -4,7 +4,7 @@ import "fmt"
 
 func main() {
 	
-	messges := make(chan string)
+	messages := make(chan string)
 	signals := make(chan bool)
 
 	select {
