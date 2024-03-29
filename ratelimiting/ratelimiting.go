@@ -20,7 +20,7 @@ func main() {
 		fmt.Println("request", req, time.Now())
 	}
 
-	burstyLimiter := make(chan time.Time, 10)
+	burstyLimiter := make(chan time.Time, 3)
 
 	for i := 0; i < 10; i++ {
 		burstyLimiter <- time.Now()
