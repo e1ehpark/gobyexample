@@ -20,20 +20,20 @@ func main() {
 		fmt.Println("request", req, time.Now())
 	}
 
-	burstyLimiter := make(chan time.Time, 3)
+	burstyLimiter := make(chan time.Time, 10)
 
-	for i := 0; i < 3; i++ {
+	for i := 0; i < 10; i++ {
 		burstyLimiter <- time.Now()
 	}
 
 	go func() {
-		for t := range time.Tick(time.Millisecond * 200) {
+		for t := range time.Tick(time.Millisecond * 1000) {
 			burstyLimiter <- t
 		}
 	}()
 
-	burstyRequests := make(chan int, 5)
-	for i := 1; i <= 5; i++ {
+	burstyRequests := make(chan int, 50)
+	for i := 1; i <= 50; i++ {
 		burstyRequests <- i
 	}
 	close(burstyRequests)
