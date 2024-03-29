@@ -22,12 +22,12 @@ func main() {
 
 	burstyLimiter := make(chan time.Time, 3)
 
-	for i := 0; i < 10; i++ {
+	for i := 0; i < 3; i++ {
 		burstyLimiter <- time.Now()
 	}
 
 	go func() {
-		for t := range time.Tick(time.Millisecond * 1000) {
+		for t := range time.Tick(time.Millisecond * 200) {
 			burstyLimiter <- t
 		}
 	}()
