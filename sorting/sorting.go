@@ -7,7 +7,7 @@ import (
 
 func main() {
 
-	s := []string{"c", "a", "b"}
+	strs := []string{"c", "a", "b"}
 	slices.Sort(strs)
 	fmt.Println("Strings:", strs)
 
@@ -15,6 +15,6 @@ func main() {
 	slices.Sort(ints)
 	fmt.Println("Ints:", ints)
 
-	s := slices.IsSorted(ints)
+	strs := slices.IsSorted(ints)
 	fmt.Println("Sorted:", s)
 }
