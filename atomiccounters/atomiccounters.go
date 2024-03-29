@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	var ops uint64
+	var ops atomic.Uint64
 
 	var wg sync.WaitGroup
 
