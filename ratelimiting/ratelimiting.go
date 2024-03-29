@@ -32,8 +32,8 @@ func main() {
 		}
 	}()
 
-	burstyRequests := make(chan int, 50)
-	for i := 1; i <= 50; i++ {
+	burstyRequests := make(chan int, 5)
+	for i := 1; i <= 5; i++ {
 		burstyRequests <- i
 	}
 	close(burstyRequests)
