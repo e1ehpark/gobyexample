@@ -15,6 +15,6 @@ func main() {
 	slices.Sort(ints)
 	fmt.Println("Ints:", ints)
 
-	strs := slices.IsSorted(ints)
+	s := slices.IsSorted(ints)
 	fmt.Println("Sorted:", s)
 }
