@@ -16,7 +16,6 @@ func hello(w http.ResponseWriter, req *http.Request) {
 	select {
 	case <-time.After(10 * time.Second):
 		fmt.Fprintf(w, "hello\n")
-		log.SetOutput(w)
 	case <-ctx.Done():
 
 		err := ctx.Err()
