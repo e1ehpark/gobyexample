@@ -1,3 +1,3 @@
-module googleoauth2
+module gobyexample.com/googleoauth2
 
 go 1.22.0
