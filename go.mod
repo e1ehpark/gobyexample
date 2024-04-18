@@ -8,3 +8,7 @@ require (
 	golang.org/x/oauth2 v0.19.0 // indirect
 	gobyexample.com/googleoauth2/handlers
 )
+
+replace (
+	obyexample.com/googleoauth2/handlers v0.0.0 => ./googleoauth2/handlers
+)
