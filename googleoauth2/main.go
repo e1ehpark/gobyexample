@@ -2,10 +2,9 @@ package main
 
 import (
 	"fmt"
+	"googleoauth2/handlers"
 	"log"
 	"net/http"
-
-	"./handlers"
 )
 
 func main() {
