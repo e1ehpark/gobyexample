@@ -4,7 +4,8 @@ import (
 	"fmt"
 	"log"
 	"net/http"
-	"D:\gobyexample\googleoauth2\handlers"
+
+	"./handlers"
 )
 
 func main() {
