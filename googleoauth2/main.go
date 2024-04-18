@@ -1,4 +1,4 @@
-package googleoauth2
+package main
 
 import (
 	"fmt"
