@@ -10,5 +10,5 @@ require (
 )
 
 replace (
-	obyexample.com/googleoauth2/handlers v0.0.0 => ./googleoauth2/handlers
+	gobyexample.com/googleoauth2/handlers v0.0.0 => ./googleoauth2/handlers
 )
