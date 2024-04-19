@@ -1,5 +1,4 @@
-module gobyexample.com/googleoauth2
-
+module gobyexample
 go 1.22.0
 
 
