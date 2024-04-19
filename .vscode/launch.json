@@ -7,7 +7,7 @@
         "name": "Launch Main",
         "type": "go",
         "request": "launch",
-        "program": "${workspaceFolder}/googleoauth2/main.go",
+        "program": "D:/gobyexample/googleoauth2/main.go",
         "args": []
     }]
 }
